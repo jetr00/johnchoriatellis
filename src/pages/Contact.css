@@ -1,0 +1,39 @@
+.coninfo-section {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.coninfo-scroll {
+  height: 100%;
+  overflow-y: auto;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  padding: 40px 20px;
+}
+
+.coninfo-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.coninfo-image-wrapper {
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+  will-change: opacity, transform;
+  opacity: 1;
+  transform: translateY(0);
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.coninfo-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.coninfo-scroll::-webkit-scrollbar {
+  width: 0;
+}
